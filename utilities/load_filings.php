@@ -2,6 +2,7 @@
 
 // Imports
 require 'vendor/autoload.php';
+require 'utilities/mysql_connection.php';
 
 // Use statements
 use PhpOffice\PhpSpreadsheet;
@@ -13,5 +14,5 @@ $filings = scandir($filingsDirectory);
 
 foreach ($filings as $filingPath) {
     $sheet = PhpSpreadsheet::IOFactory::load($filingPath);
-    
+
 }
