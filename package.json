@@ -3,6 +3,12 @@
     "tailwindcss": "^3.4.7"
   },
   "scripts": {
-    "build:css": "tailwindcss -i input.css -o static/styles.css"
+    "build:css": "postcss styles.css -o static/styles.css",
+    "watch:css": "postcss styles.css -o static/styles.css --watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0"
   }
 }

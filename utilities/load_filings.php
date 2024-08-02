@@ -14,5 +14,5 @@ $filings = scandir($filingsDirectory);
 
 foreach ($filings as $filingPath) {
     $sheet = PhpSpreadsheet::IOFactory::load($filingPath);
-
+    print("$filing");
 }
